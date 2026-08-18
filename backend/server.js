@@ -11,7 +11,7 @@ const routeRoutes = require('./routes/routeRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const profileRoutes = require('./routes/profileRoutes');
 
-const path = require('path');
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -35,7 +35,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
-app.options('*', cors());
+
 app.use(express.json({ limit: '10mb' }));
 
 
